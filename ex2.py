@@ -44,4 +44,4 @@ assert client.balance == 0
 client2 = GoldenAccount('Bary', 100)
 print(client2)
 client2.witdraw(200)
-assert client.balance == -50
+assert client2.balance == -50
