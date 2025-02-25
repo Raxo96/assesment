@@ -7,7 +7,7 @@
 #
 #    and 2 methods:
 #        - deposit (takes amount as argument, increase balance with amount)
-#        - witdraw (takes amount as argument, decrease balance with amount if there is enough money on account)
+#        - withdraw (takes amount as argument, decrease balance with amount if there is enough money on account)
 #        
 #    * implement magic method that allows to print Account instance in convenient way
 #    
@@ -34,14 +34,20 @@ client = Account('Bary', 100)
 print(client)
 
 client.deposit(50)
+print(client2)
 assert client.balance == 150
-client.witdraw(100)
+client.withdraw(100)
+print(client2)
 assert client.balance == 50
-client.witdraw(50)
+client.withdraw(50)
+print(client2)
 assert client.balance == 0
 
 
 client2 = GoldenAccount('Bary', 100)
 print(client2)
-client2.witdraw(200)
+client2.deposit(50)
+print(client2)
+client2.withdraw(200)
+print(client2)
 assert client2.balance == -50
