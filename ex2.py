@@ -7,7 +7,7 @@
 #
 #    and 2 methods:
 #        - deposit (takes amount as argument, increase balance with amount)
-#        - withdraw (takes amount as argument, decrease balance with amount if there is enough money on account)
+#        - witdraw (takes amount as argument, decrease balance with amount if there is enough money on account)
 #        
 #    * implement magic method that allows to print Account instance in convenient way
 #    
@@ -22,7 +22,7 @@
 #       
 #   
 # b) write GoldenAccount class that inherits Account,
-#    GoldenAccount can withdraw any amount of money without restrictions about balance.
+#    GoldenAccount can witdraw any amount of money without restrictions about balance.
 
 class Account:
   pass
@@ -34,13 +34,13 @@ client = Account('Bary', 100)
 print(client)
 
 client.deposit(50)
-print(client2)
+print(client)
 assert client.balance == 150
-client.withdraw(100)
-print(client2)
+client.witdraw(100)
+print(client)
 assert client.balance == 50
-client.withdraw(50)
-print(client2)
+client.witdraw(50)
+print(client)
 assert client.balance == 0
 
 
@@ -48,6 +48,6 @@ client2 = GoldenAccount('Bary', 100)
 print(client2)
 client2.deposit(50)
 print(client2)
-client2.withdraw(200)
+client2.witdraw(200)
 print(client2)
 assert client2.balance == -50
