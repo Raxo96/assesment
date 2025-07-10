@@ -50,7 +50,7 @@ assert client.balance == 0
 client2 = GoldenAccount('Bary', 100)
 print(client2)
 client2.deposit(50)
-assert client.balance == 150
+assert client2.balance == 150
 client2.withdraw(200)
 print(client2)
 assert client2.balance == -50
