@@ -41,7 +41,15 @@ class CustomLogger:
 if __name__ == "__main__":
     logger1 = CustomLogger("LoggerOne", logging.INFO)
     logger2 = CustomLogger("LoggerTwo", logging.DEBUG)
+    logger3 = CustomLogger("LoggerTwo", logging.INFO)
 
-    assert id(logger1) == id(logger2), (
-        "Logger instances should have the same IDs"
+    assert id(logger1) != id(logger2), (
+        "Logger instances should have different IDs for different names"
     )
+
+    assert id(logger2) == id(logger3), (
+        "Logger instances should have the same IDs for the same names"
+    )
+
+    assert logger2 == logger3, "Instances are the same"
+    assert logger1 != logger3, "Two different instances"
