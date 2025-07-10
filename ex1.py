@@ -11,11 +11,11 @@
 # Valid smiley face examples: :) :D ;-D :~)
 # Invalid smiley faces: ;( :> :} :]
 
-def countSmileys(arr):
+def count_smileys(arr: list):
   pass
 
 
 
-assert countSmileys([':)', ';(', ';}', ':-D']) == 2
-assert countSmileys([';D', ':-(', ':-)', ';~)']) == 3
-assert countSmileys([';]', ':[', ';*', ':$', ';-D']) == 1
+assert count_smileys([':)', ';(', ';}', ':-D']) == 2
+assert count_smileys([';D', ':-(', ':-)', ';~)']) == 3
+assert count_smileys([';]', ':[', ';*', ':$', ';-D']) == 1
