@@ -18,4 +18,4 @@ def count_smileys(arr: list):
 
 assert count_smileys([':)', ';(', ';}', ':-D']) == 2
 assert count_smileys([';D', ':-(', ':-)', ';~)']) == 3
-assert count_smileys([';]', ':[', ';*', ':$', ';-D']) == 1
+assert count_smileys([';]', ':[', ';*)', ':$', ';-D']) == 1
