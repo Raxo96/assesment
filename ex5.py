@@ -34,5 +34,5 @@ if __name__ == "__main__":
     input_data = "read it from input.txt"
     dial = Dial()
   
-    assert dial.calculate_password(input_data) == 1141
+    assert dial.calculate_zero_lands(input_data) == 1141
     assert dial.calculate_zero_passes(input_data) == 6634
