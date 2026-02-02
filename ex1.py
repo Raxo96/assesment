@@ -19,3 +19,21 @@ def count_smileys(arr: list):
 assert count_smileys([':)', ';(', ';}', ':-D']) == 2
 assert count_smileys([';D', ':-(', ':-)', ';~)']) == 3
 assert count_smileys([';]', ':[', ';*)', ':$', ';-D']) == 1
+assert count_smileys([]) == 0
+assert count_smileys([':)', ';)', ':D', ';D']) == 4
+assert count_smileys([':-)', ':~)', ';-D', ';~D']) == 4
+assert count_smileys([':)', ':(', ':D', ':P']) == 2
+assert count_smileys(['', 'abc', ':-P', '(-)', '(:)']) == 0
+assert count_smileys(['8)', 'B-)', '=D', 'xD']) == 0
+assert count_smileys([':^)', ';*D', ':-~)', ':--D']) == 0
+assert count_smileys([':(', ';(', ':|', ';]']) == 0
+assert count_smileys([':-))', ';;)', ':--D', ':~~~)']) == 0
+assert count_smileys([':', ';', ')', 'D']) == 0
+assert count_smileys([': )', '; -D', ':~ )']) == 0
+assert count_smileys([':)', ':)', ':)']) == 3
+assert count_smileys([':)', ';D', ':-D', ':~)', ';~D', ';(', ':]', ':}', ':>']) == 5
+assert count_smileys(['abc', '123', ':$', ';-D']) == 1
+assert count_smileys(['):', '(:', ':-D!', ':-D']) == 1
+assert count_smileys([':d', ';d', ':D', ';D']) == 2
+assert count_smileys([':)', ':-)', ':~)', ':--)', ':~~)']) == 3
+
