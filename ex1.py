@@ -12,7 +12,7 @@
 # Invalid smiley faces: ;( :> :} :]
 
 def count_smileys(arr: list):
-  pass
+    pass
 
 
 
@@ -36,4 +36,5 @@ assert count_smileys(['abc', '123', ':$', ';-D']) == 1
 assert count_smileys(['):', '(:', ':-D!', ':-D']) == 1
 assert count_smileys([':d', ';d', ':D', ';D']) == 2
 assert count_smileys([':)', ':-)', ':~)', ':--)', ':~~)']) == 3
+
 
